@@ -13,4 +13,4 @@ def solution(L, x):
             L.append(x)
         else :
             continue
-        return L
+        return
