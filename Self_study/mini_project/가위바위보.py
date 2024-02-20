@@ -2,13 +2,13 @@
 import random
 
 select = ["가위", "바위", "보"]
-mychoice = input("입력 : ")
-
 c_choice = random.choice(select)
 
-if mychoice not in select :
-    print ("다시 입력하세요")
-    quit()
+while True :
+    mychoice = input("입력 : ")
+    if mychoice in select :
+        break
+    print("다시입력하세요")
     
 print (f"당신은 {mychoice}를 냈습니다")
 print (f"컴퓨터는 {c_choice}를 냈습니다")
@@ -19,3 +19,4 @@ elif mychoice == c_choice :
     print ("비겼습니다")
 else :
     print ("당신이 졌습니다")
+
